@@ -25,7 +25,7 @@ public class APIHelper {
 
     public void auth() {
         httpRequest.headers(CommonMethods.jsonFileToListOfHashMaps(
-                new File("src/test/resources/twitter.json"))
+                new File("src/test/resources/twitterAccount.json"))
                 .get(0));
         headerRequest = httpRequest
                 .when()

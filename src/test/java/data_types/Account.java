@@ -30,7 +30,7 @@ public class Account {
         HashMap<String, String> account =
                 CommonMethods
                         .jsonFileToListOfHashMaps(
-                                new File("src/test/resources/twitterAccount.json"))
+                                new File("src/test/resources/twitterDeveloperAccount.json"))
                         .get(0);
         this.id = Long.valueOf(account.get("id"));
         this.name = account.get("name");
