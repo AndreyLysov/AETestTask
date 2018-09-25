@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'TestTask'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+}
+
+task testTask(type: Test) {
+    useJUnit()
+}
